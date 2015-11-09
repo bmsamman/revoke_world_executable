@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative '../lib/revoke_world_executable'
+RevokeWorldExecutable::Runner.run
+
