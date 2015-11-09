@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'revoke_world_executable'
+gem 'revoke_world_executable', github: 'bmsamman/revoke_world_executable '
 ```
 
 And then execute:
@@ -18,22 +18,25 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install revoke_world_executable
+    $ gem install bmsamman-revoke_world_executable -s http://gems.github.com
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage: fix_world_executable <options> <path>
+        # path defaults to '.' if not specified
+        -r, --recursive                  Recursively go through the path.
+        -v, --verbose                    Run with more verbosity.
+        -d, --dry                        Show changes only, do not apply.
+        -h, --help                       Show this message
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repo, run `bundle` to install dependencies.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/revoke_world_executable.
-
+To run the tests:
+```ruby
+rake test
+```
 
 ## License
 
